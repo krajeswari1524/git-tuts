@@ -1,0 +1,20 @@
+{
+    "AWSTemplateFormation":"2010-09-09",
+    "Description": "this template create an ntire app",
+    "Resources":{
+        "network":{
+            "type": "AWS::EC2::VPC",
+            "Properties":{
+                "CidrBlock" : "192.168.0.0/16",
+                "EnableDnsHostnames" : true,
+                "EnableDnsSupport" : true,
+                "Tags" : [{
+                    "key": "Name",
+                    "Value":"ntire"
+                }]
+
+            }
+        }
+    }
+}
+    
